@@ -84,4 +84,19 @@ public class SQRServiceTest {
         int actual = service.calcSqr(-200, +300);
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    public void testSqrLowerI() {
+        SQRService service = new SQRService();
+        int expected = 1;
+        int actual = service.calcSqr(100, 110);
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSqrHighI() {
+        SQRService service = new SQRService();
+        int expected = 1;
+        int actual = service.calcSqr(9801, 9802);
+        Assertions.assertEquals(expected, actual);
+    }
 }
